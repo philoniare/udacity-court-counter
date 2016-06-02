@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.philoniare.court_counter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingRight="@dimen/team_display_padding"
+            android:paddingLeft="@dimen/team_display_padding"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/team_name_padding"
+                android:paddingBottom="@dimen/team_name_padding"
+                android:textSize="@dimen/team_name_size"
+                android:textColor="@color/colorGray"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamA" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/score_padding"
+                android:id="@+id/team_a_score"
+                android:textSize="@dimen/score_size"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/startingPoint" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_a_three_points"
+                android:layout_marginBottom="@dimen/point_padding"
+                android:text="@string/threePoints"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorGray" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_a_two_points"
+                android:layout_marginBottom="@dimen/point_padding"
+                android:text="@string/twoPoints"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorGray" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_a_free_throw"
+                android:text="@string/freeThrow"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorGray" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="@color/colorGray"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:paddingRight="@dimen/team_display_padding"
+            android:paddingLeft="@dimen/team_display_padding"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="@dimen/team_name_padding"
+                android:paddingBottom="@dimen/team_name_padding"
+                android:textSize="@dimen/team_name_size"
+                android:textColor="@color/colorGray"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/teamB" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/score_padding"
+                android:id="@+id/team_b_score"
+                android:textSize="@dimen/score_size"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/startingPoint" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_b_three_points"
+                android:layout_marginBottom="@dimen/point_padding"
+                android:text="@string/threePoints"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorGray" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_b_two_points"
+                android:layout_marginBottom="@dimen/point_padding"
+                android:text="@string/twoPoints"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorGray" />
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/team_b_free_throw"
+                android:text="@string/freeThrow"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorGray" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/reset_button_padding"
+        android:id="@+id/reset_points"
+        android:text="@string/reset"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorGray" />
+</RelativeLayout>
